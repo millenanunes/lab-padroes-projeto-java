@@ -1,17 +1,10 @@
-package onde.digitalinnovation.gof.singleton;
+package one.digitalinnovation.gof.singleton;
 
-/**
- * Singleton "apressado".
- *
- * @author falvojr
- */
 public class SingletonEager {
 
-    private static SingletonEager instancia = new SingletonEager();
+    private static final SingletonEager instancia = new SingletonEager();
 
-    private SingletonEager() {
-        super();
-    }
+    private SingletonEager() { }
 
     public static SingletonEager getInstancia() {
         return instancia;

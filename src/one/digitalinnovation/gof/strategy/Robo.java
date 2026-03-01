@@ -1,4 +1,4 @@
-package onde.digitalinnovation.gof.strategy;
+package one.digitalinnovation.gof.strategy;
 
 public class Robo {
 
@@ -9,6 +9,10 @@ public class Robo {
     }
 
     public void mover() {
-        comportamento.mover();
+        if (comportamento != null) {
+            comportamento.mover();
+        } else {
+            System.out.println("Comportamento não definido!");
+        }
     }
 }
